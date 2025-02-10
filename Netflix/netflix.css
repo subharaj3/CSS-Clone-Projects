@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    width: 100vw;
+    height: 100px;
+}
+
+.hlogo{
+    width: 200px;
+    position: relative;
+    left: 80px;
+}
+
+.hright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 100px;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 80px;
+}
+
+.lang{
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+}
+
+#langfont,#langp{
+    color: white;
+}
+
+#hbutton{
+    background-color: red;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.bg1{
+    width: 100vw;
+    height: 1000px;
+    background-image: url("Netflix_img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.filter{
+    background-color: rgba(0,0,0,0.7);
+    width: 100vw;
+    height: 1000px;
+}
+
+.Welcome_message{
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Welcome_message_ele{
+    color: white;
+}
+
+#Wm1{
+    font-size: 60px;
+}
+
+#Wm1a{
+    font-size: 20px;
+}
+
+#Wm2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.email{
+    display: flex;
+    width: 650px;
+    justify-content: space-around;
+}
+
+#email1{
+    color: white;
+    font-size: larger;
+    width: 400px;
+    height: 50px;
+    padding-left: 15px;
+    background-color: rgba(0,0,0,0.5);
+    border: 1px grey solid;
+    border-radius: 5px;
+}
+
+#email2{
+    font-size: larger;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    width: 200px;
+}
+
+.bg2{
+    position: relative;
+    top: -20px;
+    background-color: black;
+    width: 100vw;
+    height: 1000px;
+    border-top: 5px solid red;
+}
