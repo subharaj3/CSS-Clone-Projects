@@ -122,9 +122,186 @@
 
 .bg2{
     position: relative;
-    top: -20px;
     background-color: black;
     width: 100vw;
-    height: 1000px;
-    border-top: 5px solid red;
+    max-height: 2500px;
+    border-top: 4px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blur{
+    position: relative;
+    top: 0px;
+    width: 100vw;
+    height: 30px;
+    background-color: rgb(0, 115, 255);
+    filter: blur(70px);
+    border-top: none;
+    border-radius: 50%;
+}
+
+.part1{
+    margin-top: 50px;
+    display: flex;
+    height: 500px;
+    width: 1300px;
+    flex-direction: column;
+}
+
+.heads{
+    color: white;
+    font-size: 30px;
+}
+
+.trenders{
+    margin-top: 20px;
+    display: flex;
+    height: 350px;
+    width: 1300px;
+    justify-content: space-around;
+}
+
+.t1img{
+    margin: 10px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.t1img:hover{
+    transform: scale(1.1);
+    animation: move 0.3s 0s;
+}
+
+@keyframes move{
+    from{transform: scale(1);}
+    to{transform: scale(1.1);}
+}
+
+.cards{
+    display: flex;
+    margin-top: 20px;
+    display: flex;
+    height: 350px;
+    width: 1300px;
+    justify-content: space-around;
+}
+
+.t2{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    height: 280px;
+    border-radius: 10px;
+    background: linear-gradient(150deg,#192146,#210e17);
+    position: relative;
+}
+
+#card1{
+    margin: 10px;
+    color: white;
+}
+
+#card2{
+    margin: 10px;
+    color: #bbbbc4;
+}
+
+.card3{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: rgb(142, 0, 0);
+}
+
+.footer{
+    background-color: black;
+    position: relative;
+    bottom: 0px;
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footemail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerdiv{
+    margin-top: 50px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#fq{
+    color: #bbbbc4;
+    text-decoration: none;
+}
+
+.links{
+    margin-top: 50px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lp1{
+    display: flex;
+    flex-direction: column;
+}
+
+.lpele{
+    margin: 10px;
+    margin-left: 0px;
+    color: #bbbbc4;
+    text-decoration: none;
+}
+
+#footlang{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#fq:hover,.lpele:hover{
+    text-decoration: underline;
+}
+
+#queshead{
+    margin-bottom: 30px;
+}
+
+.ques{
+    width: 1200px;
+    background-color: #2d2d2d;
+    color:white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ques:active{
+    #quesfont{
+        rotate: 45deg;
+    }
+}
+
+#quesans{
+    visibility: hidden;
+    overflow: hidden;
+}
+
+#quesfont{
+    position: absolute;
+    right: 20px;
 }
