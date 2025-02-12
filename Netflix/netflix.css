@@ -124,7 +124,6 @@
     position: relative;
     background-color: black;
     width: 100vw;
-    max-height: 2500px;
     border-top: 4px solid red;
     display: flex;
     flex-direction: column;
@@ -280,28 +279,59 @@
     margin-bottom: 30px;
 }
 
-.ques{
+.faq-container{
     width: 1200px;
-    background-color: #2d2d2d;
-    color:white;
-    padding: 20px;
+}
+
+.faq-item {
+    border-bottom: 2px solid black;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    width: 1200px;
+}
+
+.faq-question {
+    width: 1200px;
+    color: white;
+    background-color: #2d2d2d;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
     position: relative;
+    border-bottom: 1px solid black;
+    margin: 3px;
 }
 
-.ques:active{
-    #quesfont{
-        rotate: 45deg;
-    }
-}
-
-#quesans{
-    visibility: hidden;
-    overflow: hidden;
-}
-
-#quesfont{
+.faq-question::after {
+    content: "+";
     position: absolute;
     right: 20px;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.faq-answer {
+    width: 1200px;
+    max-height: 0;
+    color: white;
+    visibility: collapse;
+    background-color: #2d2d2d;
+    transition: max-height 0.3s ease-in-out;
+    font-size: 24px;
+    padding: 0 15px;
+    margin: 3px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .faq-question + .faq-answer {
+    visibility: visible;
+    max-height: 200px;
+    padding: 15px;
+}
+
+input[type="checkbox"]:checked + .faq-question::after {
+    content: "×";
 }
